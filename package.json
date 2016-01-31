@@ -1,6 +1,5 @@
 {
   "name": "split-md",
-  "version": "0.0.1",
   "description": "split up Markdown file into smallers files",
   "main": "src/index.js",
   "scripts": {
