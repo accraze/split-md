@@ -24,7 +24,7 @@
     "istanbul": "0.4.2",
     "mocha": "2.4.5",
     "semantic-release": "^4.3.5",
-    "shelljs": "0.5.3"
+    "shelljs": "0.6.0"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
