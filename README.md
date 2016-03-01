@@ -22,14 +22,15 @@ To use the CLI, type `split-md` followed by it's args:
 * pattern (string)
 * cleanName (string): do you want to remove anything from the pattern?
 * writePath (path to where smaller files should be created)
+* limit (optionally limit the number of files created)
 
 #### Example
 
 ```
-$ split-md 'tests/testdata.md' '### v' '###' ''
+$ split-md 'tests/testdata.md' '### v' '###' '' 10
 ```
 
-In the above example we are reading in `tests/testdata.md`. Our delimiter is whenever we see a line start with the pattern `### v`. We want to use this line for our new markdown file's name, however we want to remove the `###` by setting it as the cleanName variable. Lastly, we are setting the `writePath` to our current working directory by giving an empty string as the last variable.
+In the above example we are reading in `tests/testdata.md`. Our delimiter is whenever we see a line start with the pattern `### v`. We want to use this line for our new markdown file's name, however we want to remove the `###` by setting it as the cleanName variable. Lastly, we are setting the `writePath` to our current working directory by giving an empty string as the last variable. Also note that we are setting our limit to only create 10 files before exiting.
 
 ## License:
 
