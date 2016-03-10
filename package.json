@@ -18,7 +18,7 @@
   "devDependencies": {
     "chai": "3.5.0",
     "codecov.io": "0.1.6",
-    "commitizen": "2.6.1",
+    "commitizen": "2.6.3",
     "cz-conventional-changelog": "1.1.5",
     "ghooks": "1.0.3",
     "istanbul": "0.4.2",
