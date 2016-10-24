@@ -37,7 +37,7 @@
   "author": "Andy Craze <accraze@gmail.com> (http://accraze.info/)",
   "license": "MIT",
   "dependencies": {
-    "cli": "0.11.3"
+    "cli": "1.0.1"
   },
   "repository": {
     "type": "git",
