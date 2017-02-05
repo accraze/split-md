@@ -21,7 +21,7 @@
     "commitizen": "2.9.5",
     "cz-conventional-changelog": "1.1.6",
     "ghooks": "2.0.0",
-    "istanbul": "0.4.3",
+    "istanbul": "0.4.5",
     "mocha": "3.2.0",
     "semantic-release": "^6.3.2",
     "shelljs": "0.7.5"
