@@ -15,7 +15,7 @@ function splitter(readPath, pattern, cleanName, writePath, limit){
     if (first) {
       file = "<!-- order:" + counter + " -->\n";
     }
-    if (array[i].indexOf(pattern) > -1){
+    if (array[i].indexOf(pattern) == 0){
       if (!first) {
         fs.writeFile(title, file, function (err) {
           if (err) throw err;
