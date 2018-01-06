@@ -1,7 +1,6 @@
 [![travis build](https://img.shields.io/travis/accraze/split-md.svg)](https://travis-ci.org/accraze/split-md)
 [![version](https://img.shields.io/npm/v/split-md.svg)](https://www.npmjs.com/package/split-md)
 [![license](https://img.shields.io/npm/l/split-md.svg)](https://www.npmjs.com/package/split-md)
-[![Codecov](https://img.shields.io/codecov/c/github/accraze/split-md.svg)](https://codecov.io/github/accraze/split-md)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
@@ -34,5 +33,5 @@ In the above example we are reading in `tests/testdata.md`. Our delimiter is whe
 
 ## License:
 
-[MIT](https://github.com/accraze/split-md/blob/master/LICENSE) License 2016 © Andy Craze
+[MIT](https://github.com/accraze/split-md/blob/master/LICENSE) License 2016-2018 © Andy Craze & contributors
 
