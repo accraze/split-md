@@ -2,7 +2,7 @@ var fs = require('fs');
 
 module.exports = splitter
 
-function splitter(readPath, pattern, cleanName, writePath, limit){
+function splitter(readPath, pattern, cleanName, writePath, limit, hasCounter){
   try {
     var array = fs.readFileSync(readPath).toString().split("\n");
   }
@@ -11,6 +11,7 @@ function splitter(readPath, pattern, cleanName, writePath, limit){
   }
   var title = "", file = "", first = true;
   var counter = 1;
+
   for(var i=0; i < array.length; i++) {
     if (first) {
       file = "<!-- order:" + counter + " -->\n";
@@ -25,9 +26,14 @@ function splitter(readPath, pattern, cleanName, writePath, limit){
           break;
         file = "<!-- order:" + counter + " -->\n";
       }
-      title = writePath + array[i].replace(cleanName, "").trim()
+
+      var fileName = array[i].replace(cleanName, "").trim();
+      if (fileName.length <= 0) {
+        fileName = "<empty-filename>";
+      }
+
+      title = hasCounter ? writePath + counter + "-" + fileName : title = writePath + fileName;
       title = title.replace(":", "").replace(" ", "") + ".md"
-      console.log(title)
       file += array[i];
       first = false;
     }
@@ -42,5 +48,3 @@ function splitter(readPath, pattern, cleanName, writePath, limit){
     if (err) throw err;
   });
 }
-
-

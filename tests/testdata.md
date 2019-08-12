@@ -1,6 +1,6 @@
 ### v0.0.1
 
-Hey bro! Whats up...
+Hey friend! Whats up...
 not much. you?
 
 ### v0.0.2
@@ -12,3 +12,8 @@ We didn\'t have many changes.
 
 I believe I can fly.
 is the best song by R Kelly.
+
+###
+
+Some more text,
+in an empty file name.
